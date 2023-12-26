@@ -11,6 +11,7 @@
   "author": "ASTIK",
   "license": "ISC",
   "devDependencies": {
+    "del": "^7.1.0",
     "gulp": "^4.0.2"
   }
 }

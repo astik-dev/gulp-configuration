@@ -12,6 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "del": "^7.1.0",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-version-number": "^0.2.4"
   }
 }

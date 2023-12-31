@@ -11,6 +11,7 @@
   "author": "ASTIK",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^3.0.2",
     "del": "^7.1.0",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",

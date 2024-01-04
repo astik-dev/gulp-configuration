@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
-    "zip": "gulp deployZip"
+    "dev": "gulp",
+    "build": "gulp --build",
+    "zip": "gulp deployZip --build"
   },
   "keywords": [],
   "author": "ASTIK",
@@ -18,6 +20,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
     "gulp-imagemin": "^9.0.0",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",

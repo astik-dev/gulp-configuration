@@ -29,6 +29,7 @@
     "gulp-svg-sprite": "^2.0.3",
     "gulp-version-number": "^0.2.4",
     "gulp-webp": "^5.0.0",
+    "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^6.0.0",
     "imagemin-pngquant": "^9.0.2",

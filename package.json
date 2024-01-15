@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp --build",
+    "build:dev": "gulp --build",
+    "build:prod": "gulp deploy --build",
     "zip": "gulp deployZip --build"
   },
   "keywords": [],

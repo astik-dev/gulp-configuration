@@ -42,8 +42,9 @@ function watcher() {
 const mainTasks = gulp.parallel(copy, html, scss, js, images, svgsprite);
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const deploy = gulp.series(reset, mainTasks);
 const deployZip = gulp.series(reset, mainTasks, zip);
 
-export { deployZip }
+export { deploy, deployZip }
 
 gulp.task("default", dev);

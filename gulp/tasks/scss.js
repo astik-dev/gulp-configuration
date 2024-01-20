@@ -10,7 +10,12 @@ const sass = gulpSass(dartSass);
 
 export const scss = () => {
 	return app.gulp.src(app.path.src.scss, { sourcemaps: app.isDev })
-		.pipe(app.plugins.plumber())
+		.pipe(app.plugins.plumber({
+			errorHandler: function(error) {
+				console.log(error.message);
+				this.emit('end');
+			}
+		}))
 		.pipe(sass({
 			outputStyle: "expanded",
 		}))

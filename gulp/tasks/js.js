@@ -7,7 +7,8 @@ export const js = () => {
 			mode: app.isBuild ? "production" : "development",
 			output: {
 				filename: "script.min.js",
-			}
+			},
+			devtool: app.isDev ? "eval-cheap-module-source-map" : false,
 		}))
 		.pipe(app.gulp.dest(app.path.build.js))
 		.pipe(app.plugins.browsersync.stream());
